@@ -4,7 +4,7 @@ import Button from './Button'
 const Header = () => {
   return (
     <div className='container-header'>
-        <div className="img">
+        <div className="img-logo">
             <img src="/PI-G3/public/img/Logo.jpg" alt="logo" />
         </div>
         <div className="container-button">
