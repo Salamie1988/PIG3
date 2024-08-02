@@ -1,34 +1,93 @@
 body{
   margin: 0;
+  
 }
 
 /* --------------   ESTILO HEADER ------------------*/
 .container-header {
-  background-color: aqua;
+  background-color:#0E2A33;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   margin: 0;
   
 }
 
-.img-logo{
-  height: 30px;
+img {
+  height:  5vh;
+}
+
+.container-logo{
+  color: #FFFFFF;
+  font-size: large;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .container-button{
   display: flex;
+  gap: 10px;
+}
+
+.btn-header {
+  background-color: #FFFFFF;
+  border: none;
+  color: #007BC7;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 /* ---------- ESTILOS BODY ------------*/
 
 /* ----------- ESTILOS CONTAINER SEARCH ---------- */
 .container-search{
-  background-color: black;
-  height: 20vh;
+  margin-top: -15px;
+  background-image: url('/public/img/bariloche\ fondo.jpeg.jpg') ; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 30vh;
   width: 100%;
 }
+
+.container-search p {
+  font-weight: bold;
+}
+
+.input{
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+input::placeholder{
+  text-align: center;
+}
+
+.btn-search{
+  color: #FFFFFF;
+  background-color: #39AFE5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 103px;
+  height: 42px;
+  
+}
+
+
 
 /*----- CONTAINER TOURS--------*/
 .container-tours{
@@ -40,8 +99,41 @@ body{
 
 
 /* ------------------- ESTILOS FOOTER ---------------- */
-.container-footer{
-  background-color: red;
+.container-footer {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  height: 30px; 
+  padding: 0 20px; 
+  background-color: #8AA5AC;
   width: 100%;
-  height: 5vh;
+  box-sizing: border-box;
+}
+
+.copyright {
+  display: flex;
+  align-items: center; 
+  gap: 5px; 
+}
+
+.container-footer p {
+  margin: 0; 
+  font-size: 14px; 
+  color: white;
+}
+
+.iconos {
+  display: flex;
+  gap: 10px; 
+}
+
+.iconos img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.copy {
+  height: 24px;
+  width: 24px;
 }

@@ -1,18 +1,21 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import ButtonHeader from "./ButtonHeader";
+
 
 const Header = () => {
   return (
-    <div className='container-header'>
-        <div className="img-logo">
-            <img src="/PI-G3/public/img/Logo.jpg" alt="logo" />
-        </div>
-        <div className="container-button">
-            <Button>Iniciar Sesion</Button>
-            <Button>Crear Cuenta</Button>
-        </div>
+    <div className="container-header">
+      <div className="container-logo">
+        <img className="img-logo" src="/public/img/logo.png" alt="logo" />
+        <p>EXPLORA ARGENTINA</p>
+      </div>
+      
+      <div className="container-button">
+       <ButtonHeader>INICIAR SESION</ButtonHeader>
+       <ButtonHeader>CREAR CUENTA</ButtonHeader>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
