@@ -62,7 +62,7 @@ img {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
 }
 
@@ -103,12 +103,12 @@ input::placeholder{
 /* ------------ SECCION PRINCIPALES DESTINOS-----------------------*/
 
 
-.container-tours-random{
+/* .container-tours-random{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 80px;
   
 }
 
@@ -127,6 +127,34 @@ input::placeholder{
   margin-top: 17vh;
   margin-left: 2vw;
   
+} */
+
+.container-tours-random {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Añadido para permitir que el título se posicione correctamente */
+  /* width: fit-content; */
+}
+
+.img-card-random {
+  height: 22vh;
+  width: auto; /* Ajusta la imagen a su contenido */
+  object-fit: cover; /* Asegura que la imagen cubra completamente su contenedor */
+}
+
+.title-card-random {
+  position: absolute; /* Cambiado a absolute para superponer el texto sobre la imagen */
+  bottom: -19px; /* Posiciona el texto en la parte inferior de la imagen */
+  left: 65%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición para centrar el texto */
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px;
+  /* background-color: rgba(0, 0, 0, 0.5); Fondo semitransparente para mejorar la legibilidad */
+  border-radius: 5px;
+  text-align: center;
 }
 
 
@@ -137,8 +165,8 @@ input::placeholder{
 .container-recommendations{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   
   padding: 30px;
 }
@@ -146,6 +174,7 @@ input::placeholder{
 
  h3 {
   display: flex;
+  align-items: center;
   justify-content: center;
   color:#0E2A33
 }
