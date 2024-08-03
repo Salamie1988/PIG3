@@ -67,7 +67,8 @@ img {
 }
 
 .container-search p {
-  font-weight: bold;
+  Font-size: 1.4em;
+  /* font-weight: bold; */
 }
 
 .input{
@@ -189,10 +190,11 @@ input::placeholder{
   
 }
 
-.img-card-tour{
-  padding: 15px;
-}
-
+.img-card-tour {
+  width: 17%;
+  max-width: 300px;
+  height: auto;
+  }
 
 
 /* ------------------- ESTILOS FOOTER ---------------- */
