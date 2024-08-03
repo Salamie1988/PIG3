@@ -1,6 +1,9 @@
-import Body from "./Components/Body"
+import { Route, Routes } from "react-router-dom";
+import Body from  "./Page/Body"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
+import Detail from "./Page/Detail";
+
 
 function App() {
  
@@ -9,7 +12,10 @@ function App() {
     <>
   <div>
   <Header/>
-  <Body/>
+   <Routes>
+    <Route path="/" element={<Body/>}/>
+    <Route path="/detail" element={<Detail/>}/>
+   </Routes>
   <Footer/>
   </div>
     </>

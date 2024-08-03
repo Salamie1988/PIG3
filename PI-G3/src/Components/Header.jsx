@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonHeader from "./ButtonHeader";
+import Button from "./Button";
 
 
 const Header = () => {
@@ -11,8 +11,8 @@ const Header = () => {
       </div>
       
       <div className="container-button">
-       <ButtonHeader>INICIAR SESION</ButtonHeader>
-       <ButtonHeader>CREAR CUENTA</ButtonHeader>
+       <Button className={"btn-header"}>INICIAR SESION</Button>
+       <Button className={"btn-header"}>CREAR CUENTA</Button>
       </div>
     </div>
   );
