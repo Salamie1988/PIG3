@@ -4,7 +4,7 @@ import Form from "../Components/Form";
 import CardTour from "../Components/CardTour";
 
 
-const Body = () => {
+const Home = () => {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     // Crear lógica para manejar la búsqueda
@@ -14,7 +14,7 @@ const Body = () => {
     <>
       {/* CONTAINER SEARCH */}
       <div className="container-search">
-        <p>Cuál va a ser tu próxima aventura?</p>
+       <p>Cuál va a ser tu próxima aventura?</p>
         <Form // aca pasamos la primer props que esta en el componente form
           fields={[
             { type: "text", placeholder: "¿A dónde vamos?" },
@@ -22,7 +22,9 @@ const Body = () => {
           ]}
           buttonText="Buscar" // esta es la segunda props que marca que dira el boton
           onSubmit={handleSearchSubmit} // tercera props
+          
         />
+       
       </div>
 
       {/* CONTANINER TOURS */}
@@ -42,4 +44,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Home;

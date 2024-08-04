@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom"
 
 
 const Header = () => {
@@ -11,8 +12,11 @@ const Header = () => {
       </div>
       
       <div className="container-button">
-       <Button className={"btn-header"}>INICIAR SESION</Button>
+      {/* <Link to="/sessionStart"> DESCOMENTAR para activar la pagina de inicio de sesion, este link activa la funcionalidad del boton iniciar sesion */}
+      <Button className={"btn-header"}>INICIAR SESION</Button>
+       {/* </Link> */}
        <Button className={"btn-header"}>CREAR CUENTA</Button>
+       
       </div>
     </div>
   );

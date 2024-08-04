@@ -1,4 +1,5 @@
 export const routes = {
     body: '/',
-    details:'/detail/'
+    details:'/detail/',
+    sessionstart:'/sessionStart'
 }

@@ -17,6 +17,7 @@ body{
   position:fixed;
   gap: 10px;
   
+  
 }
 
 img {
@@ -56,7 +57,6 @@ img {
 
 /* ----------- ESTILOS SECCION SEARCH ---------- */
 .container-search{
-  margin-top: -15px;
   background-image: url('/public/img/bariloche\ fondo.jpeg.jpg') ; 
   background-repeat: no-repeat; 
   background-size: cover; 
@@ -66,7 +66,7 @@ img {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  height: 40vh;
+  height: 55vh;
   width: 100%;
 }
 
@@ -80,8 +80,7 @@ img {
 
 .container-search p {
   text-align: center;
-  margin-top: 10vh;
-  Font-size: 1.4em;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -234,6 +233,7 @@ input::placeholder{
   background-color: #8AA5AC;
   width: 100%;
   box-sizing: border-box;
+  bottom: 0;
   
 }
 
@@ -263,4 +263,28 @@ input::placeholder{
 .copy {
   height: 24px;
   width: 24px;
+}
+
+
+/*PAGINA DETALLES */
+
+.container-detail{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; /* Ajusta el margen inferior para evitar la superposición con el footer */
+  padding: 20px; /* Ajuste opcional para el contenido */
+}
+
+/*PAGINA INICIO SESION*/
+.container-session-start{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px; /* Ajusta el margen inferior para evitar la superposición con el footer */
+  padding: 20px; /* Ajuste opcional para el contenido */
 }
