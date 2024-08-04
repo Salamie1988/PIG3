@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/detail" element={<Detail />} />
-        {/* <Route path="/sessionStart" element={<SessionStart />}/> */}  {/* <= descomentar aca para activar la pagina con el formulario de inicio de sesion */}
+        <Route path="/sessionStart" element={<SessionStart />}/>  {/* <= descomentar aca para activar la pagina con el formulario de inicio de sesion */}
       </Routes>
       <Footer />
     </div>

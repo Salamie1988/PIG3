@@ -16,7 +16,7 @@ body{
   margin: 0;
   position:fixed;
   gap: 10px;
-  
+  z-index: 1000;
   
 }
 
@@ -114,7 +114,7 @@ input::placeholder{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------ SECCION PRINCIPALES DESTINOS-----------------------*/
+/* ------------ SECCION EXPERIENCIAS-----------------------*/
 
 
 /* .container-tours-random{
@@ -143,79 +143,138 @@ input::placeholder{
   
 } */
 
+
+
 .container-tours-random {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* Añadido para permitir que el título se posicione correctamente */
-  /* width: fit-content; */
+  position: relative;
+  margin-left: 4vw;
+}
+
+.card-random{
+  display: flex;
+}
+
+
+
+.img-card-random {
+  border-radius: 26px;
+  height: 40vh;
+  width: 30vh;
+  object-fit: cover; /* Asegura que la imagen cubra completamente su contenedor */
   cursor: pointer;
 }
 
-.img-card-random {
-  height: 22vh;
-  width: auto; /* Ajusta la imagen a su contenido */
-  object-fit: cover; /* Asegura que la imagen cubra completamente su contenedor */
-}
 
 .title-card-random {
   position: absolute; /* Cambiado a absolute para superponer el texto sobre la imagen */
-  bottom: -19px; /* Posiciona el texto en la parte inferior de la imagen */
-  left: 65%; /* Centra el texto horizontalmente */
-  transform: translateX(-50%); /* Ajusta la posición para centrar el texto */
-  color: #FFFFFF;
-  font-weight: bold;
+  bottom: 20px; /* Posiciona el texto en la parte inferior de la imagen */
+  left: 40%; /* Centra el texto horizontalmente */
+  transform: translateX(-300%); /* Ajusta la posición para centrar el texto */
+  color: #f20b0b;
   padding: 5px;
-  /* background-color: rgba(0, 0, 0, 0.5); Fondo semitransparente para mejorar la legibilidad */
-  border-radius: 5px;
-  text-align: center;
+  font-size: medium;
+  }
+
+.subtitle-card-random{
+  position: absolute; /* Cambiado a absolute para superponer el texto sobre la imagen */
+  bottom: -2px; /* Posiciona el texto en la parte inferior de la imagen */
+  left: 40%; /* Centra el texto horizontalmente */
+  transform: translateX(-340%); /* Ajusta la posición para centrar el texto */
+  color: #FFFFFF;
+  padding: 5px;
+  font-size: medium;
 }
 
 
 
-/*--------------- SECCION RECOMENDACIONES ----------------------------*/
+/*--------------- SECCION OFERTAS ESPECIALES ----------------------------*/
 
 
-.container-recommendations{
+.container-offers{
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
   padding: 30px;
   text-decoration: none;
+  gap: 15px;
 }
 
 
  h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   color:#0E2A33
 }
 
 /* ----------- CARD TOUR-----------------*/
 .card-tour{
-  background-color: rgba(23, 161, 250, 0.6);
+  /* background-color: rgba(23, 161, 250, 0.6); */
   color: #FFFFFF;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  background-color: rgba(193, 138, 41, 0.1);
+  width: 20vw;
+  height: max-content;
+  border-radius: 15px;
+  padding-bottom: 10px;
+  
+}
+
+.title-card-tour {
+margin-left: 10px;
+color: rgba(118, 126, 134, 1);
+font-size: large;
+}
+
+.subtitle-card-tour{
+  color: #0E2A33;
+  margin-top: -5px;
+  margin-left: 10px;
+  font-size: small;
+}
+
+.img-card-tour {
+  height: 25vh;
+  border-radius: 15px;
+  
+
+  
+  }
+
+.price-card-tour{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgba(118, 126, 134, 1); 
+  
+  
+  
+}
+
+.price-card-tour p{
+  font-size: small;
+}
+
+.price{
+ color:rgba(57, 175, 229, 1) ; 
+ font-weight: bold;
+ font-size: 30px;
  
 }
 
-
-
-
-.img-card-tour {
-  width: 17%;
-  max-width: 300px;
-  height: auto;
-  }
-
-.p-card-tour{
-  color: #FFFFFF;
-
+.btn-card-tour{
+  background-color: rgba(193, 138, 41, 0.1);
+  color: #007BC7;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  width: 7vw;
 }
+
+
+
 
 .link-card-tour {
   text-decoration: none; /* Elimina el subrayado del enlace */

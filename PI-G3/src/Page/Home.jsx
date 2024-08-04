@@ -29,15 +29,25 @@ const Home = () => {
 
       {/* CONTANINER TOURS */}
 
-      {/* DIV DE PRINCIPALES DESTINOS DEBES SER ALEATORIOS */}
+      {/* DIV DE EXPERIENCIAS DESTINOS DEBES SER ALEATORIOS */}
       <div className="container-tours-random">
-        <h3>PRINCIPALES DESTINOS</h3>
-        <CardRandom />
-      </div>
+        <h3>Experiencias</h3>
+        <p>Los destinos mas populares de Argentina, desde lugares historicos hasta maravillas naturales</p>
+        </div>
+        <div className="card-random">
+         <CardRandom />
+        <CardRandom></CardRandom>  
+        </div>
+       
+        
+      
+      
 
-      {/* DIV DE RECOMENDACIONES AQUI VAN LOS DEMAS TOURS QUE SE OFRECEN */}
-      <div className="container-recommendations">
-        <h3>RECOMENDACIONES</h3>
+      {/* DIV DE OFERTAS ESPECIALES, AQUI VAN LOS DEMAS TOURS QUE SE OFRECEN */}
+      <div className="container-offers">
+        <h3>Ofertas especiales</h3>
+        <p>Consulta nuestras ofertas especiales y descuentos</p>
+        <CardTour />
         <CardTour />
       </div>
     </>

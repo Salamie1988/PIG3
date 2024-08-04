@@ -6,7 +6,7 @@ mas que navegemos y cambiemos de paginas siempre debe de estar y esta fijo al ha
 Footer => este es el componente Footer, el cual igual que el HEADER se muestra en todas las paginas, la diferencia es que no esta fijo.(esto se encuentra en la carpeta Components)
 Home => este componente lo vamos a encontrar en la carpeta Page, y es todo lo que esta entre el HEADER Y EL FOOTER, es lo primero  que vemos al ingresar, esta parte esta divido en 3 secciones (3 div ):
 Div que tiene el el componente Form donde los input son a donde vamos? y cuando?
-Luego esta el div principales destinos (que serian las categorias) en donde en esta seccion debemos mostrar destinos aleatoriamente
+Luego esta el div Experiencias (que serian las categorias) en donde en esta seccion debemos mostrar destinos aleatoriamente
 El 3er div es el de recomendaciones en donde mostramos todos los destinos que tenemos
 
 Componentes para reutilizar:
