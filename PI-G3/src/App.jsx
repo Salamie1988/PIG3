@@ -14,7 +14,7 @@ function App() {
         <Route path="/detail" element={<Detail />} />
         <Route path="/sessionStart" element={<SessionStart />}/>  {/* <= descomentar aca para activar la pagina con el formulario de inicio de sesion */}
       </Routes>
-      <Footer />
+       <Footer /> 
     </div>
   );
 }
