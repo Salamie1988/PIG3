@@ -52,7 +52,10 @@ h3.exp {
 .container-button {
   display: flex;
   gap: 10px;
-  margin-left: 730px;
+  margin-left: auto;
+  margin-right: 20px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .btn-header {
@@ -212,6 +215,7 @@ input::placeholder {
 .container-offers {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 120px;
@@ -226,7 +230,7 @@ p.offers {
   color: #8aa5ac;
   margin-left: auto;
   /* font-size: large; */
- }
+}
 
 h3.offers {
   color: #0e2a33;
@@ -246,16 +250,27 @@ h3.offers {
 }
 
 /* ----------- CARD TOUR-----------------*/
+.contairner-card-tour{
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20vw;
+  padding-bottom: 10vh;
+}
+
 .card-tour {
   /* background-color: rgba(23, 161, 250, 0.6); */
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  background-color: rgba(193, 138, 41, 0.1);
-  width: 20vw;
+  background-color: #C18A2929;
+  width: 25vw;
   height: max-content;
   border-radius: 15px;
   padding-bottom: 10px;
+  
 }
 
 .title-card-tour {
@@ -272,7 +287,8 @@ h3.offers {
 }
 
 .img-card-tour {
-  height: 25vh;
+  width: 100%; 
+  height: 40vh;
   border-radius: 15px;
 }
 
@@ -604,3 +620,6 @@ h3.offers {
   margin-bottom: 30px; /* Ajusta el margen inferior para evitar la superposición con el footer */
   padding: 20px; /* Ajuste opcional para el contenido */
 }
+
+
+

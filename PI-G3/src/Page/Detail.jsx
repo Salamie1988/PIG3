@@ -80,7 +80,7 @@ const Detail = () => {
                 </ul>
               </div>
               <div className="map">
-                <img src="public/img/Screenshot 2024-08-04 002056.png" alt="mapa" />{/* ESTO SE TRAE DE LA API */}
+                <img src="/img/Screenshot 2024-08-04 002056.png" alt="mapa" />{/* ESTO SE TRAE DE LA API */}
               </div>
             </div>
 
