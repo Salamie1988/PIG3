@@ -12,7 +12,7 @@ const CardTour = () => {
         <div className="price-card-tour">
           <p>Desde:<span className='price'> $345.573</span></p>
           <Link to={'/detail'} className="link-card-tour">
-            <Button className={"btn-card-tour"}>Detalles</Button>
+            <Button className="btn-card-tour">Detalles</Button>
           </Link>
         </div>
       </div>

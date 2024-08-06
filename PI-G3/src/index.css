@@ -265,11 +265,13 @@ h3.offers {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  background-color: #C18A2929;
-  width: 25vw;
+  background-color:   #ffa20129;
+  width: 100%;
+  max-width: 300px; /*se modifica este*/
   height: max-content;
   border-radius: 15px;
   padding-bottom: 10px;
+  overflow: hidden; /*se modifica este*/
   
 }
 
@@ -310,13 +312,27 @@ h3.offers {
 }
 
 .btn-card-tour {
+  background-color: #ffa20129;
+  color: #007bc7;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  text-align: center;
+  max-width: 150px; /* Ajusta el tamaño máximo del botón */
+  box-sizing: border-box; 
+  /* align-self: center; Centra el botón horizontalmente */
+  margin-top: auto;
+}
+
+/* .btn-card-tour {
   background-color: rgba(193, 138, 41, 0.1);
   color: #007bc7;
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
   width: 7vw;
-}
+} */
 
 .link-card-tour {
   text-decoration: none; /* Elimina el subrayado del enlace */
