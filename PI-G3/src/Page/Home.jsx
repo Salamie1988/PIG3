@@ -30,7 +30,7 @@ const Home = () => {
       {/* CONTANINER TOURS */}
 
       {/* DIV DE EXPERIENCIAS DESTINOS DEBES SER ALEATORIOS */}
-      <div className="container-tours-random">
+      {/* <div className="container-tours-random">
         <h3 className="exp">Experiencias</h3>
         <p>Los destinos mas populares de Argentina, desde lugares historicos hasta maravillas naturales</p>
         <br />
@@ -40,7 +40,7 @@ const Home = () => {
       <div className="card-random">
         <CardRandom />
         <CardRandom></CardRandom>
-      </div>
+      </div> */}
 
 
 
@@ -50,7 +50,7 @@ const Home = () => {
       <div className="container-offers">
         <h3 className="offers">Ofertas especiales</h3>
         <br />
-        <img className="line2" src="/img/Line 2.png" alt="" />
+     
         <p className="offers">Consulta nuestras ofertas especiales y descuentos</p>
         <br />
         </div>

@@ -160,7 +160,7 @@ input::placeholder {
   
 } */
 
-.container-tours-random {
+/* .container-tours-random {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -186,29 +186,29 @@ input::placeholder {
   border-radius: 26px;
   height: 40vh;
   width: 30vh;
-  object-fit: cover; /* Asegura que la imagen cubra completamente su contenedor */
+  object-fit: cover; 
   cursor: pointer;
 }
 
 .title-card-random {
-  position: absolute; /* Cambiado a absolute para superponer el texto sobre la imagen */
-  bottom: 20px; /* Posiciona el texto en la parte inferior de la imagen */
-  left: 40%; /* Centra el texto horizontalmente */
-  transform: translateX(-300%); /* Ajusta la posición para centrar el texto */
+  position: absolute; 
+  bottom: 20px; 
+  left: 40%; 
+  transform: translateX(-300%); 
   color: #f20b0b;
   padding: 5px;
   font-size: medium;
 }
 
 .subtitle-card-random {
-  position: absolute; /* Cambiado a absolute para superponer el texto sobre la imagen */
-  bottom: -2px; /* Posiciona el texto en la parte inferior de la imagen */
-  left: 40%; /* Centra el texto horizontalmente */
-  transform: translateX(-340%); /* Ajusta la posición para centrar el texto */
+  position: absolute; 
+  bottom: -2px; 
+  left: 40%; 
+  transform: translateX(-340%); 
   color: #ffffff;
   padding: 5px;
   font-size: medium;
-}
+} */
 
 /*--------------- SECCION OFERTAS ESPECIALES ----------------------------*/
 
@@ -235,19 +235,13 @@ p.offers {
 h3.offers {
   color: #0e2a33;
   font-size: 50px;
-  position: absolute; /* Cambia la posición para usar `right` */
-  right: 50px; /* Ajusta la distancia desde el borde derecho */
-  top: 15px; /* Ajusta la distancia desde el borde superior */
+  position: absolute; 
+  right: 50px; 
+  top: 15px;
+  border-bottom: 5px solid #c18a29;
 }
 
-.line2 {
-  width: 280px;
-  height: 5px;
-  border: 1.59px 0px 0px 0px;
-  position: absolute;
-  right: 50px; /* Ajusta la distancia desde el borde derecho */
-  top: 135px; /* Ajusta la distancia desde el borde superior si es necesario */
-}
+
 
 /* ----------- CARD TOUR-----------------*/
 .contairner-card-tour{
@@ -325,15 +319,6 @@ h3.offers {
   margin-top: auto;
 }
 
-/* .btn-card-tour {
-  background-color: rgba(193, 138, 41, 0.1);
-  color: #007bc7;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 5px;
-  width: 7vw;
-} */
-
 .link-card-tour {
   text-decoration: none; /* Elimina el subrayado del enlace */
   color: inherit; /* Mantiene el color del texto del enlace */
@@ -342,26 +327,42 @@ h3.offers {
 /* ------------------- ESTILOS FOOTER ---------------- */
 .container-footer {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  height: 30px;
-  padding: 0 20px;
-  background-color: #8aa5ac;
+  padding: 10vh;
+  background-color: #172432;
   width: 100%;
   box-sizing: border-box;
-  bottom: 0;
+  color: #ffffff;
+  gap: 5vw;
 }
 
 .copyright {
+  width: 29vw;
   display: flex;
-  align-items: center;
-  gap: 5px;
+  
+  gap: 15px;
 }
 
-.container-footer p {
+.logo-footer {
+  width: 5vw;
+  height: 10vh;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50vw;
+  gap: 10px;
+  margin-right: 15vw;
+}
+
+.ul-footer {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
-  font-size: 14px;
-  color: white;
+  width: 100%;
 }
 
 .iconos {
@@ -370,14 +371,16 @@ h3.offers {
 }
 
 .iconos img {
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-.copy {
-  height: 24px;
-  width: 24px;
+.info {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /*PAGINA DETALLES */
@@ -391,7 +394,7 @@ h3.offers {
 }
 
 .container-detail h4 {
-  margin-top: 15vh;
+  margin-top: 20vh;
   width: 80vw;
   font-size: 2rem;
 }
@@ -557,8 +560,267 @@ h3.offers {
   width: 250px;
 }
 
-@media screen and (min-width: 768px) {
-  /* ------------- Media Query Seccion 1 -------------- */
+
+
+/*-------------------------     MEDIAS QUERYS      --------------------*/
+/* /-------------------------     MEDIAS QUERYS      --------------------/ */
+
+/*PAGINA HOME*/
+/* Dispositivos muy pequeños */
+@media (min-width: 320px) and (max-width: 374px) {
+  .container-header{
+    height: 15vh;
+    width: 100%;
+    
+  }
+  .container-logo{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .container-logo p {
+    font-size: 12px;
+  }
+ .img-logo {
+    height: 5vh;
+    margin-top: -5vh;
+  }
+  .container-button{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 12vh;
+  }
+  .btn-header{
+    width: min-content;
+    font-size: 10px;
+  }
+  .container-search {
+    height: 50vh;
+    padding-top: 10vh;
+  }
+  .container-search p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .container-offers {
+    height: 3vh;
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  h3.offers {
+    font-size: 1.2rem;
+    margin-right: -20vw;
+    margin-top: 10vh;
+    width: 70vw;
+  }
+  p.offers {
+    margin-top: 85px;
+    width: 250px;
+  }
+  .contairner-card-tour {
+    margin-left: 8vw;
+  }
+  .img-card-tour {
+    height: 200px;
+    width: 200px;
+  }
+  .subtitle-card-tour {
+    visibility: hidden;
+  }
+  .price-card-tour {
+    margin-left: 5px;
+    margin-top: -12vh;
+    width: 90%;
+  }
+  .price {
+    font-size: 0.9rem;
+  }
+  .btn-card-tour {
+    margin-left: -5px;
+    margin-top: 25px;
+  }
+  .link-card-tour {
+    margin-left: -10vw;
+    margin-top: 10vh;
+  }
+  .container-img-small{
+    visibility: hidden;
+  }
+  .img-big{
+   margin-left: 23%;
+  }
+  .info-booking{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-columns{
+    display: none;
+    width: 100%;
+  }
+  .logo-footer{
+    margin-top: 8vh;
+    height: 10vh;
+    width: 20vw;
+  }
+}
+
+/* Dispositivos pequeños */
+@media (min-width: 375px) and (max-width: 424px) {
+  .container-header{
+    height: 18vh;
+    width: 100%;
+  }
+  .container-logo{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+ .img-logo {
+    height: 8vh;
+    margin-top: -25px;
+  }
+  .container-search p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .container-button{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 6vh;
+  }
+  .btn-header{
+    width: min-content;
+  }
+  .container-search {
+    height: 50vh;
+    padding-top: 10vh;
+  }
+  .container-offers {    
+    max-width: 100%;
+    height: 7vh;
+  }
+  h3.offers {
+    font-size: 1.5rem;
+    width: 65vw;
+    margin-top: 10vh;
+    margin-right: -10vw;
+  }
+  p.offers {
+    margin-left: -18vw;
+    width: min-content;
+    margin-top: 17vh;
+    
+  }
+  .contairner-card-tour {
+    margin-left: -20px;
+    margin-top: 1vh;
+  }
+  .img-card-tour {
+    width: 250px;
+    height: 250px;
+  }
+  .subtitle-card-tour {
+    visibility: hidden;
+  }
+  .price-card-tour {
+    width: 90%;
+    margin-left: 5px;
+    margin-top: -10vh;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .link-card-tour {
+    margin-top: 10vh;
+    margin-left: -15vw;
+  }
+  .container-detail h4{
+    margin-top: 25vh;
+  }
+  .footer-columns{
+    display: none;
+    width: 100%;
+  }
+  .logo-footer{
+    margin-top: 8vh;
+    height: 10vh;
+    width: 20vw;
+  }
+}
+
+/* Dispositivos medianos */
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .container-header{
+    height: 15vh;
+    width: 100%;
+  }
+
+ .img-logo {
+    height: 8vh;
+  }
+  .container-search p {
+    color: white;
+    font-size: 1.4rem;
+    height: 10vh;
+  }
+   .container-button{
+   
+    margin-right: 6vh;
+  }
+  
+  .contairner-offers {
+    max-width: 100%;
+  }
+  h3.offers {
+    font-size: 2rem;
+    width: 65vw;
+    margin-top: 10vh;
+    margin-right: -10vw;
+  }
+  p.offers {
+    margin-left: 30vw;
+    width: 30vw;
+    max-width: 100%;
+    margin-top: 5vh;
+  }
+ 
+  .contairner-card-tour {
+    margin-left: 0px;
+    margin-top: -3vh;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .price-card-tour {
+    width: 90%;
+    margin-left: 5px;
+  }
+  .img-card-tour {
+    width: 250px;
+    height: 250px;
+  }
+  .btn-card-tour {
+    margin-left: -5px;
+  }
+  .footer-columns{
+    display: none;
+    width: 100%;
+  }
+  .logo-footer{
+    margin-top: 8vh;
+    height: 10vh;
+    width: 13vw;
+  }
+}
+/* Dispositivos grandes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .container-detail h4 {
     margin-top: 15vh;
     font-size: 1.5rem;
@@ -580,18 +842,14 @@ h3.offers {
     margin-left: -7vw;
   }
 
-  /* ------------- Media Query Seccion 2 -------------- */
-
   .section-two {
     display: flex;
     flex-direction: row-reverse;
-
     width: 100%;
   }
   .property {
     text-align: left;
   }
-
   .property-list li {
     font-size: 1rem;
   }
@@ -605,11 +863,11 @@ h3.offers {
     font-size: 2rem;
     text-align: center;
   }
-  .intinerary {
+  .itinerary {
     padding: 0;
     width: 250px;
   }
-  .intinerary-list li {
+  .itinerary-list li {
     font-size: 1rem;
     font-weight: 300;
     list-style-type: decimal;
@@ -622,6 +880,131 @@ h3.offers {
   .map img {
     height: 60vh;
     width: 40vw;
+  }
+  .footer-columns{
+    display: none;
+    width: 100%;
+  }
+  .logo-footer{
+    margin-top: 8vh;
+    height: 10vh;
+    width: 10vw;
+  }
+}
+/* Dispositivos muy grandes */
+@media screen and (min-width: 1025px) {
+  /* Estilos generales para pantallas grandes */
+
+  /* Sección de detalles */
+  .container-detail h4 {
+    
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .section-one {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  .container-img-small {
+    visibility: visible;
+  }
+  .img-big {
+    width: 100%;
+    height: auto;
+  }
+  .info-booking {
+    margin-left: 0;
+  }
+
+  /* Sección dos */
+  .section-two {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 2rem; /* Añadido relleno para no tocar los bordes */
+  }
+  .property {
+    text-align: left;
+  }
+  .property-list li {
+    font-size: 1.1rem;
+  }
+  .travel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .travel h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .itinerary {
+    padding: 0;
+    width: 300px;
+  }
+  .itinerary-list li {
+    font-size: 1.1rem;
+    font-weight: 300;
+    list-style-type: decimal;
+    margin-left: 0;
+    padding: 0;
+  }
+  .map {
+    margin-top: 25px;
+  }
+  .map img {
+    height: 60vh;
+    width: 50vw;
+  }
+  .info-card-booking{
+    width: 300px;
+  }
+
+  /* Estilos adicionales para otros elementos si es necesario */
+  .container-offers {
+    height: auto; /* Ajusta la altura si es necesario */
+    padding: 1rem;
+  }
+  h3.offers {
+    font-size: 2rem;
+    width: 50vw;
+    margin-top: 5vh;
+    margin-right: 0;
+  }
+  p.offers {
+    margin-right: -15vh;
+    width: 60vw;
+    margin-top: 15vh;
+  }
+  .container-card-tour {
+    margin-left: 0;
+    margin-top: 1vh;
+  }
+  .img-card-tour {
+    width: 300px;
+    height: 300px;
+  }
+  .price-card-tour {
+    width: 90%;
+    margin-left: 5px;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .link-card-tour {
+    margin-top: 5vh;
+    margin-left: 0;
+  }
+  .footer-columns{
+    display: none;
+    width: 100%;
+  }
+  .logo-footer{
+    margin-top: 8vh;
+    height: 10vh;
+    width: 10vw;
   }
 }
 
