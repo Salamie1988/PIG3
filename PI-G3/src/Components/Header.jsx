@@ -17,11 +17,12 @@ const Header = () => {
         <Link to="/sessionStart"> {/* DESCOMENTAR para activar la pagina de inicio de sesion, este link activa la funcionalidad del boton iniciar sesion */}
           <Button className={"btn-header"}>INICIAR SESION</Button>
         </Link>
+        <Link to={"/createaccount"}>
         <Button className={"btn-header"}>CREAR CUENTA</Button>
-
+        </Link> 
       </div>
     </div>
-  );
-};
+    );
+  };
 
 export default Header;

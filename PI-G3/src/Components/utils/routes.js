@@ -1,5 +1,8 @@
+import CreateAccount from "../../Page/CreateAccount";
+
 export const routes = {
     body: '/',
     details:'/detail/',
-    sessionstart:'/sessionStart'
+    sessionstart:'/sessionStart',
+    createaccount:'/createaccount'
 }

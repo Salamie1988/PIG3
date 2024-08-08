@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Components/Button" 
+import { Link } from "react-router-dom";
 
 const Detail = () => {
   return (
@@ -76,17 +77,19 @@ const Detail = () => {
                   <li>Lago Roca <br />
                   Parada: 30 minutos - Entrada incluida</li>{/* ESTO SE TRAE DE LA API */}
                   <li>Regresarás al punto de partida</li>        
-
                 </ul>
               </div>
               <div className="map">
-                <img src="/img/Screenshot 2024-08-04 002056.png" alt="mapa" />{/* ESTO SE TRAE DE LA API */}
-              </div>
-            </div>
-
-
-      </section>
-      
+              <img src="/img/Screenshot 2024-08-04 002056.png" alt="mapa" />{/* ESTO SE TRAE DE LA API */}
+                </div>
+           </div>
+    </section>
+      <div className="btn-detail">
+        <Link to={"/"}>
+       <Button className="btn-back"> "flecha"</Button>
+       </Link> 
+      </div>
+       
     </main>
   );
 };

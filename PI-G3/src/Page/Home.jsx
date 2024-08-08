@@ -1,5 +1,5 @@
 import React from "react";
-import CardRandom from "../Components/CardRandom";
+import CardCategories from "../Components/CardCategories";
 import Form from "../Components/Form";
 import CardTour from "../Components/CardTour";
 
@@ -30,23 +30,24 @@ const Home = () => {
       {/* CONTANINER TOURS */}
 
       {/* DIV DE EXPERIENCIAS DESTINOS DEBES SER ALEATORIOS */}
-      {/* <div className="container-tours-random">
+      {/* <div className="container-categories">
         <h3 className="exp">Experiencias</h3>
         <p>Los destinos mas populares de Argentina, desde lugares historicos hasta maravillas naturales</p>
         <br />
         <img className="line1" src="/img/Line 1.png" alt="" />
       </div>
       <br />
-      <div className="card-random">
-        <CardRandom />
-        <CardRandom></CardRandom>
+      <div className="card-categories">
+        <CardCategories/>
+        <CardCategories/>
+        <CardCategories/>
       </div> */}
 
 
 
 
 
-      {/* DIV DE OFERTAS ESPECIALES, AQUI VAN LOS DEMAS TOURS QUE SE OFRECEN */}
+      {/* DIV DE OFERTAS ESPECIALES, ESTO DEBE SER RANDOM */}
       <div className="container-offers">
         <h3 className="offers">Ofertas especiales</h3>
         <br />

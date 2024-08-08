@@ -34,10 +34,9 @@ const Footer = () => {
         <ul className='ul-footer'>
           <li className='info'>Seguinos en</li>
           <div className='iconos'>
-            <li><img src="/img/facebook.png" alt="" /></li>
-            <li><img src="/img/pinterest.png" alt="" /></li>
-            <li><img src="/img/instagram.png" alt="" /></li>
-            <li><img src="/img/twitter.png" alt="" /></li>
+            <li><img src="./img/facebook.png" alt="logo-facebook" /></li>
+            <li><img src="./img/instagram.png" alt="logo-instagram" /></li>
+            <li><img src="./img/twitter.png" alt="logo-twitter" /></li>
           </div>
         </ul>
 

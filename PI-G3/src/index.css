@@ -134,7 +134,10 @@ input::placeholder {
 
 /* ------------ SECCION EXPERIENCIAS-----------------------*/
 
-/* .container-tours-random{
+/* ESTA SECCION SE VA A USAR DESPEUS */
+
+
+/* .container-categories{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,14 +146,19 @@ input::placeholder {
   
 }
 
-.img-card-random{
+.img-card-categories{
   height: 22vh;
   position: absolute;
+  border-radius: 26px;
+  height: 40vh;
+  width: 30vh;
+  object-fit: cover; 
+  cursor: pointer;
   
   
 }
 
-.title-card-random{
+.title-card-categories{
   position: relative;
   color: #FFFFFF;
   font-weight: bold;
@@ -160,7 +168,7 @@ input::placeholder {
   
 } */
 
-/* .container-tours-random {
+/* .container-categories {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -178,29 +186,11 @@ input::placeholder {
   opacity: 0px;
 }
 
-.card-random {
+.card-categories {
   display: flex;
 }
 
-.img-card-random {
-  border-radius: 26px;
-  height: 40vh;
-  width: 30vh;
-  object-fit: cover; 
-  cursor: pointer;
-}
-
-.title-card-random {
-  position: absolute; 
-  bottom: 20px; 
-  left: 40%; 
-  transform: translateX(-300%); 
-  color: #f20b0b;
-  padding: 5px;
-  font-size: medium;
-}
-
-.subtitle-card-random {
+.subtitle-card-categories {
   position: absolute; 
   bottom: -2px; 
   left: 40%; 
@@ -383,6 +373,7 @@ h3.offers {
   margin-bottom: 10px;
 }
 
+/*PAGINA DETALLE*/
 /*PAGINA DETALLES */
 
 .container-detail {
@@ -511,6 +502,7 @@ h3.offers {
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  padding-bottom:10vh ;
 }
 .link-home {
   color: white;
@@ -560,12 +552,23 @@ h3.offers {
   width: 250px;
 }
 
+.btn-back{
+  width: 20vw;
+  height: 5vh;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #007bc7;
+  cursor: pointer;
+
+}
+
+
 
 
 /*-------------------------     MEDIAS QUERYS      --------------------*/
 /* /-------------------------     MEDIAS QUERYS      --------------------/ */
 
-/*PAGINA HOME*/
+
 /* Dispositivos muy pequeños */
 @media (min-width: 320px) and (max-width: 374px) {
   .container-header{
@@ -665,6 +668,12 @@ h3.offers {
     height: 10vh;
     width: 20vw;
   }
+  .btn-detail{
+    padding-bottom: 10vh;
+   }
+  .btn-back{
+    margin-left: 50vw;
+  }
 }
 
 /* Dispositivos pequeños */
@@ -752,6 +761,12 @@ h3.offers {
     height: 10vh;
     width: 20vw;
   }
+  .btn-back{
+    margin-left: 50vw;
+  }
+  .btn-detail{
+    padding-bottom: 10vh;
+   }
 }
 
 /* Dispositivos medianos */
@@ -818,6 +833,13 @@ h3.offers {
     height: 10vh;
     width: 13vw;
   }
+  .btn-back{
+    margin-left: 50vw;
+  }
+  .btn-detail{
+    padding-bottom: 10vh;
+   }
+
 }
 /* Dispositivos grandes */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -846,6 +868,8 @@ h3.offers {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    
+    
   }
   .property {
     text-align: left;
@@ -855,9 +879,10 @@ h3.offers {
   }
   .travel {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     width: 100%;
+    
   }
   .travel h3 {
     font-size: 2rem;
@@ -866,7 +891,7 @@ h3.offers {
   .itinerary {
     padding: 0;
     width: 250px;
-  }
+    }
   .itinerary-list li {
     font-size: 1rem;
     font-weight: 300;
@@ -890,6 +915,18 @@ h3.offers {
     height: 10vh;
     width: 10vw;
   }
+
+  .btn-back{
+      margin-left: 60vw;
+    }
+
+   .btn-detail{
+    padding-bottom: 10vh;
+   }
+
+
+
+ 
 }
 /* Dispositivos muy grandes */
 @media screen and (min-width: 1025px) {
@@ -923,6 +960,7 @@ h3.offers {
     flex-direction: row;
     width: 100%;
     padding: 0 2rem; /* Añadido relleno para no tocar los bordes */
+    padding-bottom: 10vh;
   }
   .property {
     text-align: left;
@@ -932,7 +970,7 @@ h3.offers {
   }
   .travel {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
   }
@@ -998,27 +1036,24 @@ h3.offers {
     margin-left: 0;
   }
   .footer-columns{
-    display: none;
-    width: 100%;
+   width: 100%;
   }
   .logo-footer{
     margin-top: 8vh;
     height: 10vh;
     width: 10vw;
+    
   }
+  .btn-back{
+    margin-left: 60vw;
+  }
+
+ .btn-detail{
+  padding-bottom: 10vh;
+ }
 }
 
-/*PAGINA INICIO SESION*/
-.container-session-start {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  margin-bottom: 30px; /* Ajusta el margen inferior para evitar la superposición con el footer */
-  padding: 20px; /* Ajuste opcional para el contenido */
-}
 
 
 
